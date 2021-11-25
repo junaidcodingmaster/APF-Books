@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-icon-57x57.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-icon-60x60.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-icon-72x72.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-icon-76x76.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-icon-114x114.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-icon-120x120.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-icon-144x144.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-icon-152x152.png?v=4"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-icon-180x180.png?v=4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicons/android-icon-192x192.png?v=4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png?v=4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicons/favicon-96x96.png?v=4"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png?v=4"
+    />
+    <link rel="manifest" href="img/favicons/manifest.json?v=4" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png?v=4" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>APF Books</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+    <script>
+var $form = $('form'),
+    url = 'https://script.google.com/macros/s/AKfycbwzUizOHhwUgvnsr_4UyX3h0PRKp4naRuNAr9hmk1U4YR1TbtSx4U7W7MJ5M8fZRZeTfA/exec'
+
+$('#hello').on('click', function(e) {
+  e.preventDefault();
+  $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+    alert("hello")
+  );
+})
+    </script>
+  </head>
+
+  <body>
+    <div class="bg">
+      <div class="bg__star"><img src="img/background/star.png" /></div>
+      <div class="bg__cloud bg__cloud--3">
+        <img src="img/background/cloud-3.png" />
+      </div>
+      <div class="bg__cloud bg__cloud--2">
+        <img src="img/background/cloud-2.png" />
+      </div>
+      <div class="bg__cloud bg__cloud--1">
+        <img src="img/background/cloud-1.png" />
+      </div>
+      <div class="bg__sun"><img src="img/background/sun.png" /></div>
+      <div class="bg__mountain"><img src="img/background/mountain.png" /></div>
+    </div>
+
+    <div id="page-wrap">
+      <header class="header">
+        <a href="#"
+          ><img class="header__logo" src="img/logo.png" alt="Readfead"
+        /></a>
+        <!-- <button
+          type="button"
+          class="header__view-screenshots"
+          data-toggle="modal"
+          data-target="#modal-screenshots"
+        >
+          View Screenshots&nbsp;&nbsp;<i class="fa fa-play-circle"></i>
+        </button> -->
+        <div id="toggler" class="header__toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <div class="content nonbounce">
+        <main class="main" role="main">
+          <div
+            id="carousel"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="false"
+          >
+            <div class="carousel-inner carousel-inner--home" role="listbox">
+              <div class="carousel-item active">
+                <h3>Read anywhere - anytime</h3>
+                <p>
+                  Get your all Andhra Pradesh board books here for free,you can read anywhere anytime. read by using APF books by Junaid 
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Read together</h3>
+                <p>
+                  Ask and respond to questions about books you’re reading. Get
+                  notified when someone discusses one of your books.
+                </p>
+              </div>
+              <div class="carousel-item">
+                <h3>Discover</h3>
+                <p>
+                  See what other books are there to reading and talking about it.
+                </p>
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+          </div>
+
+          <form id="form" class="form">
+            <input type="email" class="form__input" name="email" required />
+            <button type="submit" class="form__submit" id="hello">
+              <i class="fa fa-angle-right"></i>
+            </button>
+            <small class="form__help-text"
+              >Enter your email to receive the app when it launch.</small
+            >
+          </form>
+        </main>
+      </div>
+
+      <footer id="footer" class="footer">
+        <div class="footer__wrap">
+          <nav class="footer__nav">
+            <button
+              class="footer__view-screenshots"
+              data-toggle="modal"
+              data-target="#modal-screenshots"
+            >
+              View Screenshots&nbsp;&nbsp;<i class="fa fa-play-circle"></i>
+            </button>
+            <a class="link" href="./pages/about.html">About Us</a>
+            
+          </nav>
+          <div class="footer__copyright">
+            <i class="fa fa-copyright"></i>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            APF Books. By Junaid.
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Screenshots -->
+    <div
+      class="screenshots modal fade"
+      id="modal-screenshots"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">x</span>
+          </button>
+          <h2 class="screenshots__title">Screenshots</h2>
+          <div class="screenshots__toggler">
+            <div class="active"></div>
+            <div class="android"><i class="fa fa-android"></i> Android</div>
+            <div class="apple"><i class="fa fa-apple"></i> iOS</div>
+          </div>
+
+          <div class="screenshots__carousel screenshots__carousel--android">
+            <div class="items" role="listbox">
+              <div class="item item-1">
+                <img src="img/screenshots-android/1.png" alt="" />
+              </div>
+              <div class="item item-2">
+                <img src="img/screenshots-android/2.png" alt="" />
+              </div>
+              <div class="item item-3">
+                <img src="img/screenshots-android/3.png" alt="" />
+              </div>
+              <div class="item item-4">
+                <img src="img/screenshots-android/4.png" alt="" />
+              </div>
+              <div class="item item-5">
+                <img src="img/screenshots-android/5.png" alt="" />
+              </div>
+              <div class="item item-6">
+                <img src="img/screenshots-android/6.png" alt="" />
+              </div>
+              <div class="item active">
+                <img src="img/screenshots-android/7.png" alt="" />
+              </div>
+              <div class="item item-8">
+                <img src="img/screenshots-android/8.png" alt="" />
+              </div>
+              <div class="item item-9">
+                <img src="img/screenshots-android/9.png" alt="" />
+              </div>
+              <div class="item item-10">
+                <img src="img/screenshots-android/10.png" alt="" />
+              </div>
+              <div class="item item-11">
+                <img src="img/screenshots-android/11.png" alt="" />
+              </div>
+              <div class="item item-12">
+                <img src="img/screenshots-android/12.png" alt="" />
+              </div>
+              <div class="item item-13">
+                <img src="img/screenshots-android/13.png" alt="" />
+              </div>
+            </div>
+            <a
+              class="arrow arrow--prev"
+              href="#"
+              role="button"
+              data-slide="prev"
+            ></a>
+            <a
+              class="arrow arrow--next"
+              href="#"
+              role="button"
+              data-slide="next"
+            ></a>
+          </div>
+
+          <div
+            class="screenshots__carousel screenshots__carousel--apple"
+            style="display: none"
+          >
+            <div class="items" role="listbox">
+              <div class="item item-1">
+                <img src="img/screenshots-1.png" alt="" />
+              </div>
+
+              <div class="item item-2">
+                <img src="img/screenshots-2.png" alt="" />
+              </div>
+
+              <div class="item item-3">
+                <img src="img/screenshots-3.png" alt="" />
+              </div>
+
+              <div class="item item-4">
+                <img src="img/screenshots-4.png" alt="" />
+              </div>
+
+              <div class="item item-5">
+                <img src="img/screenshots-5.png" alt="" />
+              </div>
+
+              <div class="item item-6">
+                <img src="img/screenshots-6.png" alt="" />
+              </div>
+
+              <div class="item active">
+                <img src="img/screenshots-7.png" alt="" />
+              </div>
+
+              <div class="item item-8">
+                <img src="img/screenshots-8.png" alt="" />
+              </div>
+
+              <div class="item item-9">
+                <img src="img/screenshots-9.png" alt="" />
+              </div>
+
+              <div class="item item-10">
+                <img src="img/screenshots-10.png" alt="" />
+              </div>
+            </div>
+
+            <a
+              class="arrow arrow--prev"
+              href="#"
+              role="button"
+              data-slide="prev"
+            ></a>
+            <a
+              class="arrow arrow--next"
+              href="#"
+              role="button"
+              data-slide="next"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+      integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
+      integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
+      integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
