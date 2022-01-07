@@ -13,5 +13,3 @@ APF Books
 **APF books** means Andhra Pradesh State Board books for free
 
 --> By Junaid.
-
-contribute here for every state get books , when more people will join then more states will covers then app name will changes.Not for one people or one state, this for all , when ever you give knowledge to others then your knowledge.
